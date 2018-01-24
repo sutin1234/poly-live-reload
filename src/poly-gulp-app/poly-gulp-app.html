@@ -1,0 +1,30 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+
+<dom-module id="poly-gulp-app">
+    <template>
+    <style>
+      :host {
+        display: block; 
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>   
+  </template>
+
+    <script>
+        class PolyGulpApp extends Polymer.Element {
+            static get is() {
+                return 'poly-gulp-app';
+            }
+            static get properties() {
+                return {
+                    prop1: {
+                        type: String,
+                        value: 'polymer 2.0 live-reload with browser-sync gulp'
+                    }
+                };
+            }
+        }
+
+        window.customElements.define(PolyGulpApp.is, PolyGulpApp);
+    </script>
+</dom-module>

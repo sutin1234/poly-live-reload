@@ -1,0 +1,21 @@
+{
+    "name": "poly-gulp",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "directories": {
+        "test": "test"
+    },
+    "dependencies": {
+        "browser-sync": "^2.23.5",
+        "gulp": "^3.9.1"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "polymer serve --port 8081 | npm run watch",
+        "watch": "browser-sync start --proxy localhost:8081 --files \"src/**/*.*, index.html, *.js\""
+    },
+    "author": "",
+    "license": "ISC"
+}

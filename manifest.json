@@ -1,0 +1,6 @@
+{
+  "name": "poly-gulp",
+  "short_name": "poly-gulp",
+  "start_url": "/",
+  "display": "standalone"
+}
